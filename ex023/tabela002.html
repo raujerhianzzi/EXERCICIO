@@ -10,12 +10,16 @@
             font-family: Arial, Helvetica, sans-serif;
         }
         table {
-            width: 400px;
+            width: 500px;
             border-collapse: collapse;
         }
         td, th {
             border: 1px solid black;
             padding: 10px;
+        }
+        .num {
+            text-align: right;
+            background-color: yellow;
         }
         thead, tfoot {
             background-color: aqua;
@@ -40,23 +44,69 @@
             <tr>
                 <th>Estado</th>
                 <th>Populção</th>
+                <th>Pais Comparado (Habitantes)</th>
             </tr>
         </thead>
         <tbody>
             <tr>
                 <td>São Paulo</td>
-                <td>46.649</td>
+                <td class="num">46.649</td>
+                <td>Espanha - 46.439</td>               
+
             </tr>
             <tr>
                 <td>Minas Gerais</td>
-                <td>42.625</td>
+                <td class="num">21.411</td>
+                <td>Siri Lanka - 20.7645</td>
+                
             </tr>
-            
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.463</td>
+                <td>Siria - 17.500</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14.985</td>
+                <td>Chade - 14.037</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11.597</td>
+                <td>Bolivia - 11.410</td>
+            </tr>
+            <tr>
+                <td>Rio Grande Do Sul</td>
+                <td class="num">11.466</td>
+                <td>Bélgica - 11.250</td>
+
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9.674</td>
+                <td>Bielorrúsia - 9.485</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">9.240</td>
+                <td>Emirados Árabes - 9.157</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">8.777</td>
+                <td>Áustria - 8.602</td>                
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7.338</td>
+                <td>Sérvia - 7.144</td>
+            </tr>
 
         </tbody>
         <tfoot>
             <th>total de Habitantes</th>
-            <td>00000</td>
+            <td>158.600</td>
+            <td>155.788</td>
         </tfoot>
     </table>
 </body>
