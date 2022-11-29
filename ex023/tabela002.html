@@ -12,6 +12,13 @@
             background-color: azure;
             
         }
+        caption {
+            font-size: 25px;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgrey;
+            border: 1px solid black;
+        }
         h1 {
             text-align: center;
         }
@@ -47,18 +54,20 @@
                 TR, TD, TH
     -->
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>Populção</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">Populção</th>
                 <th>Pais Comparado (Habitantes)</th>
             </tr>
         </thead>
+            
         <tbody>
             <tr>
                 <td>São Paulo</td>
                 <td class="num">46.649</td>
-                <td>Espanha - 46.439</td>              
+                <td>Espanha - 46.439x</td>              
 
             </tr>
             <tr>
@@ -111,7 +120,7 @@
 
         </tbody>
         <tfoot>
-            <th>total de Habitantes</th>
+            <th scope="row">total de Habitantes</th>
             <td><strong>158.600</strong></td>
             <td><strong>155.788</strong></td>
         </tfoot>
