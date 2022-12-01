@@ -11,17 +11,18 @@
             font-family: Arial, Helvetica, sans-serif;
             width: 600px;
             border-collapse: collapse;
-            
-        }
-        td{
-            border: 1px solid black;
+             border: 1px solid black;
             text-align: center;
             
         }
-        td.linha{
+        th, td{
+            border: 1px solid black;
+        }
+       
+        th.linha{
             background-color: chartreuse;
         }
-        td.coluna{
+        th.coluna{
             background-color: cornsilk;
         }
     </style>
@@ -30,14 +31,14 @@
     <table>
         <thead>
             <tr>
-                <td>Grupo</td>
-                <td>Nomes</td>
-                <td colspan="3" class="coluna">Filmes</td>
+                <th>Grupo</th>
+                <th>Nomes</th>
+                <th colspan="3">Filmes</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td rowspan="3" class="linha">mulheres</td>
+                <th rowspan="3" class="linha">mulheres</th>
                 <td>Ana Maria Santos</td>
                 <td>Alien</td>
                 <td>Rambo</td>
@@ -56,7 +57,7 @@
                 <td>Big Hero</td>
             </tr>
             <tr>
-                <td rowspan="3" class="linha">Homens</td>
+                <th rowspan="3" class="linha">Homens</th>
                 <td>Bruno Mendonça</td>
                 <td>Intocáveis</td>
                 <td>Amnésia</td>
@@ -75,6 +76,12 @@
                 <td>Toy Story</td>
             </tr>
         </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="4">Total</th>
+                <td>15300</td>
+            </tr>
+        </tfoot>
     </table>
     
 </body>
