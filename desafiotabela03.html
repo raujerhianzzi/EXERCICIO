@@ -11,11 +11,12 @@
             font-size: 20px;
             width: 500px;
             border-collapse: collapse;
+            text-align: center;
            
         }
         tr, th, td{
             border: 1px solid black;
-            text-align: center;
+            
         }
         thead{
             background-color: dimgrey;
@@ -23,7 +24,15 @@
         }
         .media{
             background-color: dimgrey;
+            color: white; 
+            text-align: left;
+        }
+        .media1{
+            background-color: dimgrey;
             color: white;
+            text-align: center;
+        }
+        .materia{
             text-align: left;
         }
     </style>
@@ -32,55 +41,55 @@
     <table>
         <thead>
             <tr>
-                <th rowspan="2">Área</th>
-                <th rowspan="2">Disciplina</th>
-                <th colspan="2">Notas</th>
-                <th rowspan="2">Média</th>
+                <th rowspan="2" scope="col">Área</th>
+                <th rowspan="2" scope="col">Disciplina</th>
+                <th colspan="2" scope="colgroup">Notas</th>
+                <th rowspan="2" scope="col">Média</th>
             </tr>
             <tr>
-                <th>Nota 1</th>
-                <th>Nota 2</th>
+                <th scope="col">Nota 1</th>
+                <th scope="col">Nota 2</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <th rowspan="4">Exatas</th>
-                <td>Matemática</td>
+                <th rowspan="4" scope="rowgroup">Exatas</th>
+                <td class="materia">Matemática</td>
                 <td>1.0</td>
                 <td>2.0</td>
                 <td>3.0</td>
             </tr>
             <tr>
-                <td>Fisíca</td>
+                <td class="materia">Fisíca</td>
                 <td>1.0</td>
                 <td>2.0</td>
                 <td>3.0</td>
             </tr>
             <tr>
-                <td>Quimíca</td>
+                <td class="materia">Quimíca</td>
                 <td>1.0</td>
                 <td>2.0</td>
                 <td>3.0</td>
             </tr>
             <tr>
-                <td>Biologia</td>
+                <td class="materia">Biologia</td>
                 <td>1.0</td>
                 <td>2.0</td>
                 <td>3.0</td>
             </tr>
             <tr>
-                <th colspan="4" class="media">Média de Exatas</th>
-                <td class="media">3.0</td>
+                <th colspan="4" class="media" scope="row">Média de Exatas</th>
+                <td class="media1">3.0</td>
             </tr>
             <tr>
-                <th rowspan="2">Humanas</th>
-                <td>História</td>
+                <th rowspan="2" scope="rowgroup">Humanas</th>
+                <td class="materia">História</td>
                 <td>1.0</td>
                 <td>2.0</td>
                 <td>3.0</td>
             </tr>
             <tr>
-                <td>Geografia</td>
+                <td class="materia">Geografia</td>
                 <td>1.0</td>
                 <td>2.0</td>
                 <td>3.0</td>
@@ -88,8 +97,8 @@
         </tbody>
         <tfoot>
             <tr>
-                <th colspan="4" class="media">Média de Humanas</th>
-                <td class="media">3.0</td>
+                <th colspan="4" class="media" scope="row">Média de Humanas</th>
+                <td class="media1">3.0</td>
             </tr>
         </tfoot>
     </table>   
